@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/e03b185f1b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600&family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header flex">
+      <div class="flex">
+        <img src="./assets/logo.png" alt="logo" width="100%" />
+        <h1>
+          <strong>journey</strong>
+        </h1>
+      </div>
+      <nav>
+        <ul class="flex">
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="#">top destinations</a>
+          </li>
+          <li>
+            <a href="#">recomended places</a>
+          </li>
+          <li>
+            <a href="#">contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- hero -->
+    <div class="padding">
+        <section class="hero-section flex column start">
+          <h2><strong>let's begin</strong></h2>
+          <img src="./assets/dots-3.png" alt="dots-3" />
+          <p>We assist you to choose the best</p>
+          <a href=""><i class="fa-solid fa-chevron-down"></i></a>
+          <form>
+            <fieldset class="fieldset flex align-baseline">
+              <div class="form-1 flex-48">
+                <label>
+                  Choose your destination
+                  <input
+                    type="text"
+                    name="destination"
+                    placeholder="Type your destination..."
+                  />
+                </label>
+                <div class="check-in flex">
+                  <label>
+                    Check in Date
+                    <input type="datetime" name="time" placeholder="check in" />
+                  </label>
+                  <label>
+                    Check in Date
+                    <input
+                      type="datetime"
+                      name="time"
+                      placeholder="check out"
+                    />
+                  </label>
+                </div>
+              </div>
+              <div class="flex-48 form-2">
+                <label>
+                  How many rooms ?
+                  <input type="number" name="room" placeholder="1 room" />
+                </label>
+                <label class="adult">
+                  Adult
+                  <input type="number" name="adult" placeholder="1" />
+                </label>
+                <label class="adult">
+                  Children
+                  <input type="number" name="children" placeholder="0" />
+                </label>
+                <button class="btn">CHECK AVAILABLITY</button>
+              </div>
+            </fieldset>
+          </form>
+        </section>
+        <!-- journey -->
+        <article class="journey-art">
+          <h3>YOUR <strong>JOURNEY</strong> IS OUR PRIORITY</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has<br />
+            been the industry's standard dummy text ever since the 1500s
+          </p>
+          <button class="btn-2">CONTINUE EXPLORE</button>
+        </article>
+    </div>
+      <!-- europe -->
+      <section class="padding">
+        <article class="europe flex">
+          <img src="./assets/tm-img-01.jpg" alt="01" width="100%" />
+          <div class="europe-content">
+            <h4>Europe's most visited places</h4>
+            <p class="para">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500sLorem Ipsum is simply dummy text of the
+              printing and typesetting industry. Lorem Ipsum
+            </p>
+            <button class="btn-3">continue reading</button>
+          </div>
+          <div class="chevron-items">
+            <a href=""><i class="fa-solid fa-circle-chevron-left"></i></a>
+            <a href="#"><i class="fa-solid fa-circle-chevron-right"></i></a>
+          </div>
+        </article>
+        <article class="asia flex justify-end">
+          <div class="asia-content">
+            <h4>Asia's most popular face</h4>
+            <p class="para">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500sLorem Ipsum is simply dummy text of the
+              printing and typesetting industry. Lorem Ipsum
+            </p>
+            <button class="btn-3">continue reading</button>
+          </div>
+          <div class="chevron-items-asia">
+            <a href=""><i class="fa-solid fa-circle-chevron-left"></i></a>
+            <a href="#"><i class="fa-solid fa-circle-chevron-right"></i></a>
+          </div>
+          <img src="./assets/tm-img-02.jpg" alt="01" width="100%" />
+        </article>
+        <article class="europe flex">
+          <img src="./assets/tm-img-03.jpg" alt="01" width="100%" />
+          <div class="europe-content">
+            <h4>America's most famous places</h4>
+            <p class="para">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500sLorem Ipsum is simply dummy text of the
+              printing and typesetting industry. Lorem Ipsum
+            </p>
+            <button class="btn-3">continue reading</button>
+          </div>
+          <div class="chevron-items">
+            <a href=""><i class="fa-solid fa-circle-chevron-left"></i></a>
+            <a href="#"><i class="fa-solid fa-circle-chevron-right"></i></a>
+          </div>
+        </article>
+      </section>
+      <!-- continent maps -->
+      <section class="padding">
+        <article class="continent-map">
+          <img src="./assets/north-america.png" alt="" /><!--
+          --><img src="./assets/south-america.png" alt="" /><!--
+         --><img src="./assets/europe.png" alt="" /><!--
+        --><img class="asia-map" src="./assets/asia.png" alt="" /><!--
+        --><img src="./assets/africa.png" alt="" /><!--
+        --><img src="./assets/australia.png" alt="" /><!--
+        --><img src="./assets/antartica.png" alt="" />
+        </article>
+      </section>
+      <!-- payment -->
+      <section class="padding">
+        <div class="container">
+          <div class="child-container">
+            <article class="payment flex">
+              <img src="./assets/tm-img-04.jpg" alt="" />
+              <div class="payment-content">
+                <h5>ASIA RESORT HOTEL</h5>
+                <strong class="country-name">Singapore</strong>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.<br />
+                  Lorem Ipsum
+                </p>
+              </div>
+              <img class="curve-img" src="./assets/button-curve.png" alt="" />
+              <div class="dollar">
+                <p>$440</p>
+                <a href="">continue reading</a>
+              </div>
+            </article>
+            <article class="payment flex">
+              <img src="./assets/tm-img-05.jpg" alt="" />
+              <div class="payment-content">
+                <h5>nullam egetest a nislL</h5>
+                <strong class="country-name">yangon, myanmar</strong>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.<br />
+                  Lorem Ipsum
+                </p>
+              </div>
+              <img class="curve-img" src="./assets/button-curve.png" alt="" />
+              <div class="dollar">
+                <p>$450</p>
+                <a href="">continue reading</a>
+              </div>
+            </article>
+            <article class="payment flex">
+              <img src="./assets/tm-img-06.jpg" alt="" />
+              <div class="payment-content">
+                <h5>proin interdum ullamcooper</h5>
+                <strong class="country-name">bangkok, thailand</strong>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.<br />
+                  Lorem Ipsum
+                </p>
+              </div>
+              <img class="curve-img" src="./assets/button-curve.png" alt="" />
+              <div class="dollar">
+                <p>$460</p>
+                <a href="">continue reading</a>
+              </div>
+            </article>
+            <article class="payment flex">
+              <img src="./assets/tm-img-07.jpg" alt="" />
+              <div class="payment-content">
+                <h5>Lorem ipsum dolor sit</h5>
+                <strong class="country-name">vientiane, laos</strong>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.<br />
+                  Lorem Ipsum
+                </p>
+              </div>
+              <img class="curve-img" src="./assets/button-curve.png" alt="" />
+              <div class="dollar">
+                <p>$470</p>
+                <a href="">continue reading</a>
+              </div>
+            </article>
+            <div class="btn-4">
+              <button>show more places</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- map -->
+
+      <section class="padding map">
+        <figure>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28633.56876201816!2d84.34231159528795!3d26.222817189476707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3992fc0166e38983%3A0x623c6c1cb7d5211f!2sSiwan%2C%20Bihar!5e0!3m2!1sen!2sin!4v1651318310933!5m2!1sen!2sin"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </figure>
+        <form>
+          <fieldset class="fieldset-bottom flex wrap">
+            <input type="text" name="text" placeholder="Name" />
+            <input type="email" name="mail-id" placeholder="Email" />
+            <input
+              class="subject"
+              type="subject"
+              name="subject"
+              placeholder="Subject"
+            />
+            <textarea name="message" cols="40" rows="8">Message</textarea>
+            <div class="btn-5">
+              <button>send message now</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer class="padding">
+      <div class="footer">
+        <small>copyright&copy;2020 Your company. Design by template Mo</small>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,435 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* custom styles */
+
+*,
+::before
+::after 
+{
+    box-sizing: border-box;
+}
+
+.padding 
+{
+    padding: 0px 120px;
+}
+.container {
+    padding: 0px 120px;
+    background-color: white;
+}
+/* variables */
+:root {
+    --primary: #69C6BA;
+    --secondary: #C66995;
+}
+/* body */
+body {
+    font-size: 16px;
+    padding: 0px 32px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #69C6BA;
+}
+
+a {
+    text-decoration: none;
+}
+main {
+    background-color: #E6E6E6;
+}
+/* flex */
+.flex-1 {
+    display: flex;
+}
+.flex-48 {
+    flex: 0 1 48%;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
+}
+.column {
+    flex-direction: column;
+}
+.start {
+    justify-content: flex-start;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.align-baseline {
+    align-items: baseline;
+}
+.justify-end {
+    justify-content: end;
+}
+/* general */
+
+/* header */
+header {
+    padding: 0px 32px;
+}
+
+.header {
+    padding: 20px 250px;
+    background-color: white;
+}
+.header img {
+    width: 50px;
+}
+.header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.header a {
+    font-size: smaller;
+    margin-left: 35px;
+    color: black;
+    text-transform: capitalize;
+}
+.header a:hover {
+    color: var(--primary);
+}
+
+/* hero */
+
+.hero-section {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./assets/banner.jpg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+.hero-section h2 {
+    text-transform: uppercase;
+    font-size: 38px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+.hero-section p {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 10px 0px;
+}
+.hero-section a {
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: white;
+    padding: 12px;
+}
+/* hero-form */
+form {
+    position: absolute;
+}
+.fieldset {
+    width: 800px;
+    padding: 20px;
+    background-color: white;
+}
+.fieldset label {
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.adult input {
+    width: 90px;
+}
+.fieldset input {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    border: none;
+}
+.btn {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary);
+    margin-top: 20px;
+    color: white;
+    border: none;
+}
+.form-2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* journey */
+
+.journey-art {
+    text-align: center;
+    padding: 40px 0px;
+}
+.journey-art h3 {
+    font-size: 30px;
+}
+.journey-art strong {
+    font-weight: 700;
+}
+.journey-art p {
+    font-size: 12px;
+    margin: 30px 0px;
+}
+.btn-2 {
+    padding: 10px;
+    color: white;
+    background-color: var(--primary);
+    border: none;
+}
+/* europe */
+.europe {
+    background-color: white;
+    position: relative;
+}
+.europe img {
+    width: 50%;
+}
+.europe-content {
+    background-color: var(--primary);
+    padding: 45px 30px;
+    color: white;
+    position: absolute;
+    width: 500px;
+    left: 530px;
+}
+ h4 {
+    font-size: 26px;
+}
+.para {
+    font-size: 10px;
+    margin: 12px 0px;
+    line-height: 1.5;
+}
+.btn-3 {
+    padding: 10px;
+    color: var(--primary);
+    border: none;
+    text-transform: uppercase;
+}
+.europe a {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    color: white;
+    padding: 15px;
+    margin-left: 5px;
+}
+.chevron-items {
+    position: absolute;
+    left: 423px;
+}
+/* asia */
+
+.asia {
+    background-color: white;
+    position: relative;
+}
+
+.asia img {
+    width: 50%;
+}
+
+.asia-content {
+    background-color: var(--secondary);
+    padding: 45px 30px;
+    color: white;
+    position: absolute;
+    width: 500px;
+    right: 530px;
+}
+ .asia .btn-3 {
+    padding: 10px;
+    color: var(--secondary);
+    border: none;
+    text-transform: uppercase;
+}
+.asia a {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    color: white;
+    padding: 15px;
+    margin-right: 5px;
+}
+.chevron-items-asia {
+    position: absolute;
+    right: 423px;
+}
+/* continent maps */
+
+.continent-map img {
+    padding: 35px 31px;
+    background-color: var(--primary);
+}
+.continent-map .asia-map {
+    background-color: var(--secondary);
+}
+
+/* payment */
+
+.container {
+    background-color:  white;
+}
+.child-container {
+   padding-top: 40px;
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+}
+.child-container article {
+    margin-bottom: 20px;
+}
+.payment-content {
+    padding: 20px 15px;
+}
+.payment-content h5 {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.country-name {
+    color: var(--secondary);
+    text-transform: capitalize;
+}
+.payment-content p {
+    color: grey;
+    font-size: smaller;
+    margin-top: 20px;
+}
+.dollar {
+    background-color: var(--primary);
+    padding: 63px 0px;
+    width: 135px;
+}
+.dollar p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.dollar a {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 30px;
+
+}
+.curve-img {
+    background-color: var(--primary);
+}
+.btn-4 button {
+    background-color: var(--primary);
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    border: none;
+}
+.btn-4 {
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 40px;
+}
+
+/* map */
+.map {
+    position: relative;
+}
+form {
+    position: absolute;
+    bottom: 70px;
+    right: 190px;
+}
+.fieldset-bottom {
+    padding: 20px;
+    width: 200px;
+    background-color: white;
+}
+.fieldset-bottom input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color:  #E6E6E6;
+    color: #8B949B;
+}
+.subject {
+    width: 100%;
+}
+.fieldset-bottom textarea {
+    border: none;
+    background-color:  #E6E6E6;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #8B949B;
+}
+.btn-5 {
+      width: 100%;
+    
+}
+.btn-5 button {
+    width: 100%;
+    padding: 10px 0px;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--primary);
+}
+/* footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: var(--primary);
+    font-size: smaller;
+    color: white;
+}
+footer {
+    background-color:#E6E6E6 ;
+}
